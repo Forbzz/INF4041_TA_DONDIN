@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Nicolappli</string>
     <string name="gaymode">GAY MODE ACTIVATED.</string>
+    <string name="gaymodedesact">GAY MODE DESACTIVATED.</string>
 </resources>

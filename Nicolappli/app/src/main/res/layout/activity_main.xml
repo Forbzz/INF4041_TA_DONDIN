@@ -86,21 +86,61 @@
         android:layout_height="wrap_content"
         android:text="Envoyer"
         android:id="@+id/button"
-        android:layout_below="@+id/editText4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="88dp"
         android:background="#b8eb4dbb"
-     />
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/dezdz"
+        android:layout_marginBottom="42dp" />
 
-    <Switch
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/editText4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/radioGroup">
+    <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gay?"
-        android:id="@+id/gayswitch"
+        android:text="Homo"
+        android:id="@+id/homo"
         android:layout_below="@+id/editText4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:checked="@bool/abc_action_bar_embed_tabs_pre_jb"
-        android:onClick="gayMode"/>
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:onClick="onRadioButtonClicked" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="emo"
+        android:id="@+id/lesbia"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal &quot;lovers&quot;"
+        android:id="@+id/animal"
+        android:layout_below="@+id/radioButton2"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:onClick="onRadioButtonClicked"/>
+
+</RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Now choose your favorite theme"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/editText4"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginTop="30px"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
